@@ -21,7 +21,7 @@ runs:
       if: ${{ (runner.os == 'Linux') }}
       run: |
         rustup set profile minimal
-        rustup install
+        rustup install 1.71.0-x86_64-unknown-linux-gnu
       shell: bash
     # - name: Cargo login
     #   if: ${{ (runner.os == 'Linux') }}
