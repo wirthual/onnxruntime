@@ -8,6 +8,10 @@ env:
   RUST_BACKTRACE: 1
   MANIFEST_PATH: ${{ github.workspace }}/rust/Cargo.toml
 
+defaults:
+ run:
+  working-directory: ./rust
+
 jobs:
   fmt:
     name: Rustfmt
